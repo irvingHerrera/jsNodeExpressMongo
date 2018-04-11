@@ -1,0 +1,22 @@
+{
+    "name": "ejemplonpm",
+    "version": "1.0.0",
+    "description": "Esto es un ejemplo de un fichero package.json",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/irvingHerrera/jsNodeExpressMongo.git"
+    },
+    "author": "Irving",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/irvingHerrera/jsNodeExpressMongo/issues"
+    },
+    "homepage": "https://github.com/irvingHerrera/jsNodeExpressMongo#readme",
+    "dependencies": {
+        "chance": "^1.0.13"
+    }
+}
