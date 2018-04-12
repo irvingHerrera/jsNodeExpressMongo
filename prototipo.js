@@ -30,3 +30,19 @@ console.log(
     agente instanceof Persona,
     agente instanceof Object
 );
+
+//----- Herencia múltiple ----
+
+function SuperHeroe() {
+    this.vuela = function() {
+        console.log(this.nombre + ' vuela');
+    };
+    this.esquivaBalas = function() {
+        console.log(this.nombre + ' esquiva balas');
+    }
+}
+
+Object.assign(Agentes.prototype, new SuperHeroe());
+
+agente.vuela();
+agente.esquivaBalas();
