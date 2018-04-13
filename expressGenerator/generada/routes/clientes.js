@@ -3,6 +3,12 @@
 var express = require('express');
 var router = express.Router();
 
+router.use(function(req, res, next) {
+    console.log("middleware de router clientes");
+    res.send('respuesta');
+    next();
+});
+
 router.get('/', function(req, res, next) {
     console.log("req.query", req.query);
     res.send('respuesta a clientes');
